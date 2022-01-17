@@ -39,8 +39,8 @@ class Network{
 
     //Responsible for connecting (merging) two component in the network
     Union(node_A, node_B){
-        let a = Find(node_A);
-        let b = Find(node_B);
+        let a = this.Find(node_A);
+        let b = this.Find(node_B);
 
         if(a == b) return;
 
