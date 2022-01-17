@@ -2,6 +2,7 @@ class Network{
     constructor(){
         this._nodes = []; //set of Nodes AKA "sites" 
         this._compSz = []; //sizes of components in the network
+        this._connections = [];
         this._nextNodeId = 0; //id to be assigned to the next node entering our in our network.
     }
 
@@ -57,5 +58,11 @@ class Network{
             this._compSz[a] += this._compSz[b];
             this._compSz[b] = 0;
         }
+
+        //create a connection
+        connection = new Connection(node_A, node_B);
+
+        //add it to the set of active connections
+        this._connections.push(connection);
     }
 }
