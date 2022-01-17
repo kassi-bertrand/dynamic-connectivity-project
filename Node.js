@@ -1,7 +1,8 @@
 class Node{
-    //(int, int)
-    constructor(positionX, positionY, nextNodeId){
+    //(int, int, int, int)
+    constructor(positionX, positionY, id, nextNodeId){
         this._position = createVector(positionX, positionY);
+        this._id = id;
         this._nextNodeId = nextNodeId; //id of the next node in the network
         this._radius = 32;
     }
@@ -9,6 +10,10 @@ class Node{
     //Getters
     GetPosition(){
         return this._position;
+    }
+
+    GetId(){
+        return this._id;
     }
 
     GetNextNodeId(){
@@ -22,6 +27,10 @@ class Node{
     //Setters
     SetPosition(positionX, positionY){
         this._position.set(positionX, positionY);
+    }
+
+    SetId(id){
+        this._id = id;
     }
 
     SetNextNodeId(id){
