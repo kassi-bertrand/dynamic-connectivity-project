@@ -4,7 +4,7 @@ class Node{
         this._position = createVector(positionX, positionY);
         this._id = id;
         this._nextNodeId = nextNodeId; //id of the next node in the network
-        this._radius = 32;
+        this._radius = 18;
     }
 
     //Getters

@@ -60,7 +60,7 @@ class Network{
         }
 
         //create a connection
-        connection = new Connection(node_A, node_B);
+        let connection = new Connection(node_A, node_B);
 
         //add it to the set of active connections
         this._connections.push(connection);
@@ -72,12 +72,12 @@ class Network{
 
     Display(){
         push();
-        for(let i = 0; i < this._nodes.length; i++){
-            this._nodes[i].Display();
-        }
-
         for(let i = 0; i < this._connections.length; i++){
             this._connections[i].Display();
+        }
+        
+        for(let i = 0; i < this._nodes.length; i++){
+            this._nodes[i].Display();
         }
         pop();
     }
