@@ -65,4 +65,20 @@ class Network{
         //add it to the set of active connections
         this._connections.push(connection);
     }
+
+
+    Update(){
+    }
+
+    Display(){
+        push();
+        for(let i = 0; i < this._nodes.length; i++){
+            this._nodes[i].Display();
+        }
+
+        for(let i = 0; i < this._connections.length; i++){
+            this._connections[i].Display();
+        }
+        pop();
+    }
 }

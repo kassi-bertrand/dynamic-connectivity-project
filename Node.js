@@ -40,4 +40,11 @@ class Node{
     SetRadius(radius){
         this._radius = radius;
     }
+
+    //Display
+    Display(){
+        stroke('#1b2631');
+        fill('#1b2631');
+        ellipse(this._position.x, this._position.y, this._radius, this._radius);
+    }
 }
