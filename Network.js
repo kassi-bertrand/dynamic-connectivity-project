@@ -42,18 +42,18 @@ class Network{
     Union(node_A, node_B){
         let a = this.Find(node_A);
         let b = this.Find(node_B);
-
-        if(a == b) return;
+        
+        if(a === b) return;
 
         //Make smaller component point to the larger one
         if(this._compSz[a] < this._compSz[b]){
-            node_A.SetNextNodeId(node_B.GetId());
+            node_A.SetNextNodeId(b);
             //update component size
             this._compSz[b] += this._compSz[a];
             this._compSz[a] = 0;
         }
         else{
-            node_B.SetNextNodeId(node_A.GetId());
+            node_B.SetNextNodeId(a);
             //updata component size
             this._compSz[a] += this._compSz[b];
             this._compSz[b] = 0;
