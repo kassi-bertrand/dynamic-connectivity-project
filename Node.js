@@ -1,10 +1,10 @@
 class Node{
     //(int, int, int, int)
-    constructor(positionX, positionY, id, nextNodeId){
+    constructor(positionX, positionY, id, nextNodeId, png){
         this._position = createVector(positionX, positionY);
         this._id = id;
         this._nextNodeId = nextNodeId; //id of the next node in the network
-        this._radius = 18;
+        this._thumbnail = png; //node picture
     }
 
     //Getters
@@ -41,10 +41,8 @@ class Node{
         this._radius = radius;
     }
 
-    //Display
+    //thumbnail Displayed here
     Display(){
-        stroke('#1b2631');
-        fill('#1b2631');
-        ellipse(this._position.x, this._position.y, this._radius, this._radius);
+        image(this._thumbnail, this._position.x, this._position.y);
     }
 }
