@@ -15,11 +15,14 @@ class Connection{
     }
 
     //Display
-    //REMEMBER: Images are 35 x 35 pixels
+    //REMEMBER: All Images are 90 x 90 pixels
     Display(){
-        stroke('#17202a');
-        strokeWeight(2.3);
-        line(this._from.GetPosition().x + 35, this._from.GetPosition().y + 35, this._to.GetPosition().x + 35, this._to.GetPosition().y + 35);
+        stroke('#cacfd2');
+        strokeWeight(1.6);
 
+        let x_offset = this._from.GetImgWidth() / 2;
+        let y_offset = this._from.GetImgHeight() / 2;
+
+        line(this._from.GetPosition().x + x_offset, this._from.GetPosition().y + y_offset, this._to.GetPosition().x + x_offset, this._to.GetPosition().y + y_offset);
     }
 }

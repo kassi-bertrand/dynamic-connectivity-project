@@ -20,6 +20,14 @@ class Node{
         return this._nextNodeId;
     }
 
+    GetImgWidth(){
+        return this._thumbnail.width;
+    }
+
+    GetImgHeight(){
+        return this._thumbnail.height;
+    }
+
     //Setters
     SetPosition(positionX, positionY){
         this._position.set(positionX, positionY);
