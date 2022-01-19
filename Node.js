@@ -1,5 +1,5 @@
 class Node{
-    //(int, int, int, int)
+    //(int, int, int, int, image)
     constructor(positionX, positionY, id, nextNodeId, png){
         this._position = createVector(positionX, positionY);
         this._id = id;
@@ -20,10 +20,6 @@ class Node{
         return this._nextNodeId;
     }
 
-    GetRadius(){
-        return this._radius;
-    }
-
     //Setters
     SetPosition(positionX, positionY){
         this._position.set(positionX, positionY);
@@ -35,10 +31,6 @@ class Node{
 
     SetNextNodeId(id){
         this._nextNodeId = id;
-    }
-
-    SetRadius(radius){
-        this._radius = radius;
     }
 
     //thumbnail Displayed here

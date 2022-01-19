@@ -4,15 +4,14 @@ let images = [];
 //node picture
 function preload(){
     images[0] = loadImage('./images/base-station-1.png');
-    images[1] = loadImage('./images/cloud-1.png');
-    images[2] = loadImage('./images/freelancer-1.png');
-    images[3] = loadImage('./images/router-1.png');
-    images[4] = loadImage('./images/router-2.png');
-    images[5] = loadImage('./images/satellite-2.png');
-    images[6] = loadImage('./images/server-1.png');
-    images[7] = loadImage('./images/smart-home-1.png');
-    images[8] = loadImage('./images/smartphone-1.png');
-    images[9] = loadImage('./images/smartphone-2.png');
+    images[1] = loadImage('./images/freelancer-1.png');
+    images[2] = loadImage('./images/router-1.png');
+    images[3] = loadImage('./images/router-2.png');
+    images[4] = loadImage('./images/satellite-2.png');
+    images[5] = loadImage('./images/server-1.png');
+    images[6] = loadImage('./images/smart-home-1.png');
+    images[7] = loadImage('./images/smartphone-1.png');
+    images[8] = loadImage('./images/smartphone-2.png');
 
 }
 

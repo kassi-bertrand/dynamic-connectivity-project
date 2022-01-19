@@ -15,9 +15,11 @@ class Connection{
     }
 
     //Display
+    //REMEMBER: Images are 35 x 35 pixels
     Display(){
-        stroke('#b2babb');
+        stroke('#17202a');
         strokeWeight(2.3);
         line(this._from.GetPosition().x + 35, this._from.GetPosition().y + 35, this._to.GetPosition().x + 35, this._to.GetPosition().y + 35);
+
     }
 }
