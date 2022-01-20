@@ -4,7 +4,7 @@
 
 # Project Description 📜
 
-The project consisted in creating an interactive network vizualization, and simulating basic interactions among entities involved in the network.
+The project consists in creating an interactive network vizualization, and simulating basic interactions among entities involved in the network.
 
 # Why this project?
 
@@ -16,7 +16,11 @@ During the winter break, I purchased a physical copy of [Algorithms (4th Edition
 
 1. Every time the user clicks on the screen, a node should enters the network, and randomly connect to another node in the network.
 
-2. A connection is made _if and only if_ the pair is not - directly or indirectly - connected
+2. A connection is made _if and only if_ the pair is not - directly or indirectly - connected. Consider the following image, as an example 👇:
+
+![connections](./images/illustration.jpg)
+
+A connection between nodes `A` and `C` is unecessary because they indirectly connect through node `B`. 🙂
 
 _Note: Those specs may change over time, as the program improves_ If they do, they'll be marked as "radioactive" ☢️.
 
