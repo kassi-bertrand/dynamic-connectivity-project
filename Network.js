@@ -68,10 +68,16 @@ class Network{
 
 
     Update(){
+
+        //update network
+        for(let i = 0; i < this._connections.length; i++){
+            this._connections[i].Update();
+        }
+        
     }
 
     Display(){
-        push();
+        clear();
         for(let i = 0; i < this._connections.length; i++){
             this._connections[i].Display();
         }
@@ -79,6 +85,6 @@ class Network{
         for(let i = 0; i < this._nodes.length; i++){
             this._nodes[i].Display();
         }
-        pop();
+
     }
 }
