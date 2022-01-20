@@ -56,7 +56,9 @@ _Note: ✔️ = Implemented <br> ❌ = not implemented_
 
 4. **_Communication_**. Allow nodes, once connected, to send each other "fake messages" (or "fake packets") represented by small spheres. ✔️
 
-5. **_Scaling_**. Though, I am happy with my progress so far, our network is not very "realistic". For now, the `Network` class keeps track of **every** existing connections in our network. It's "okay" for small-sized networks, but becomes _unpractical_ 🙅‍♂️ as the number of nodes (i.e. users) grows. Nodes should be in charge of their own connections, and communicate with any of them, instead of the network❌.
+5. **_Scaling_**. Though, I am happy with my progress so far, our network is not very "realistic". For now, the `Network` class keeps track of **every** existing connections in our network. It's "okay" for small-sized networks, but becomes _unpractical_ 🙅‍♂️ as the number of nodes (i.e. users) grows.❌
+
+6. **Software Design**. Right now, significant portions of the code revolve around the `Network` class. In other words, too many "responsibilities" were assigned to this class. I would like to spread functionalities a bit more. For instance, Nodes should be responsible for their own connections, and communications. Not the Network.❌
 
 # Useful resources 📖
 
